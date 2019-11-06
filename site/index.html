@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Noticias</title>
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <style>
+        /* #owl-demo .owl-item div {
+            padding: auto;
+        }
+
+        #owl-demo .owl-item img {
+            display: block;
+            width: 1000px;
+            height: auto;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        } */
+        .owl-carousel {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .owl-carousel div:not(.owl-controls) {
+            height: 100%;
+        }
+
+        .owl-carousel .owl-slide {
+            background-image: url('https://s2.glbimg.com/vP5sLXCCaJiTqUDSMOexJa1MAK4=/0x0:2000x1333/1600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/A/V/e5eO5qQ9AGTN5QtxgTzQ/materia-premiacao-voce-empreendedor-13-de-novembro.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .owl-carousel div.owl--text {
+            position: absolute;
+            bottom: 4em;
+            left: 2em;
+            width: 55em;
+            height: 6em;
+            padding: 1em;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, .5);
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.658);
+            font-size: 1em;
+            color: #ffffff;
+        }
+
+        .owl-carousel div.owl--texto {
+            position: absolute;
+            bottom: 4em;
+            left: 2em;
+            width: 20em;
+            height: 8em;
+            padding: 1em;
+            background: rgba(255, 255, 255, .5);
+            border-radius: 4px;
+            margin-left: 70%;
+        }
+
+        .owl-carousel .owl-controls {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+        }
+
+        .owl-carousel .owl-controls .owl-buttons div {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: inline-block;
+            zoom: 1;
+            margin: 0;
+            width: 50px;
+            height: 30px;
+            line-height: 25px;
+            text-align: center;
+            font-size: 0.9em;
+            border-radius: 3px;
+            color: #fff;
+            background: #000;
+            opacity: 0.6;
+            text-transform: capitalize;
+        }
+
+        .owl-carousel .owl-controls .owl-buttons .owl-prev {
+            left: 5px;
+        }
+
+        .owl-carousel .owl-controls .owl-buttons .owl-next {
+            right: 5px;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: futura, sans-serif;
+        }
+    </style>
+
+    <div id="owl-example" class="owl-carousel">
+        <div class="owl-slide">
+            <div class="owl--text">
+                <div style="display: flex; font-size: 40px;">
+                    <strong>Prêmio Você Empreendedor será entregue dia 13 de novembro</strong>
+                </div>
+            </div>
+            <div class="owl--texto">
+                <div style="display: flex; font-size: 20px;">
+                    <img style="height: 100%; width: 140px; margin-right: 10px;"
+                        src="https://www.qrcode-monkey.com/img/blog/qrcode-classic-blue.png" alt="">
+                    <strong> Acesse e saiba mais sobre a noticia!</strong>
+                </div>
+            </div>
+        </div>
+        <div class="owl-slide"
+            style="background-image: url('https://www.dci.com.br/image/policy:1.678379:1516643691/.jpg?f=2x1&$p$f=7d891a5&w=1500&$w=f075b93');">
+            <div class="owl--text">
+                <div style="display: flex; font-size: 40px;">
+                    <strong> 8 crianças empreendedoras que já faturam alto</strong>
+                </div>
+            </div>
+            <div class=" owl--texto">
+                <div style="display: flex; font-size: 20px;">
+                    <img style="height: 100%; width: 140px; margin-right: 10px;"
+                        src="https://www.qrcode-monkey.com/img/blog/qrcode-classic-blue.png" alt="">
+                    <strong> Acesse e saiba mais sobre a noticia!</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        // $(document).ready(function () {
+        //     $("#owl-demo").owlCarousel({
+        //         autoPlay: 3000,
+        //         stopOnHover: true,
+        //         navigation: true,
+        //         paginationSpeed: 1000,
+        //         goToFirstSpeed: 2000,
+        //         singleItem: true,
+        //         autoHeight: false,
+        //         transitionStyle: "fade"
+        //     });
+
+        // });
+
+        $(document).ready(function () {
+
+            $("#owl-example").owlCarousel({
+                autoPlay: 3000,
+                goToFirstSpeed: 1000,
+                loop: true,
+                autoPlay: 300,
+                items: 1,
+                navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                pagination: false,
+                rewindSpeed: 500,
+                transitionStyle: "fade",
+                dots: false
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
